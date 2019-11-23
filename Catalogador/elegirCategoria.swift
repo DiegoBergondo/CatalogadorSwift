@@ -31,6 +31,14 @@ class elegirCategoria: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         tipoSeleccionado = row
     }
+    
+    @IBAction func pulsarAceptar(_ sender: Any) {
+        self.performSegue(withIdentifier: "principal", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! principal
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,7 +7,17 @@
 //
 
 import UIKit
+import TreeView
 
 class principal: UIViewController{
+    
+    @IBOutlet var treeTable: TreeTable!
+    @IBOutlet weak var tabla: UITableView!
+    @IBOutlet weak var vistaPrincipal: UIView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+                
+    }
     
 }

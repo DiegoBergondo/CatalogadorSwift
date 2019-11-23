@@ -1,0 +1,6 @@
+framework module Pods_Catalogador_CatalogadorUITests {
+  umbrella header "Pods-Catalogador-CatalogadorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

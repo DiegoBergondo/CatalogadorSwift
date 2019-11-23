@@ -1,0 +1,6 @@
+framework module Pods_Catalogador {
+  umbrella header "Pods-Catalogador-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -18,6 +18,8 @@
 		0D2E3DAF238826BB00F31727 /* CatalogadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E3DAE238826BB00F31727 /* CatalogadorUITests.swift */; };
 		0D2E3DBD23884C7000F31727 /* elegirCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E3DBC23884C7000F31727 /* elegirCategoria.swift */; };
 		0D2E3DC32388659E00F31727 /* principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E3DC22388659E00F31727 /* principal.swift */; };
+		0DEDE4F62393F2D900C57A56 /* tipoColeccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDE4F52393F2D900C57A56 /* tipoColeccion.swift */; };
+		0DEDE4F82393F30400C57A56 /* presentacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEDE4F72393F30400C57A56 /* presentacion.swift */; };
 		64F1EA55500DC0107662B581 /* Pods_CatalogadorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7F9A9A1D0FECC4B409FCB2 /* Pods_CatalogadorTests.framework */; };
 		C6D0087E47F1DFD02C0A4C53 /* Pods_Catalogador_CatalogadorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A6DF27EA49F09E7A90ECC9 /* Pods_Catalogador_CatalogadorUITests.framework */; };
 		D7D68006127B915E63C07B09 /* Pods_Catalogador.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38546E8FB4910C8C0A95607 /* Pods_Catalogador.framework */; };
@@ -58,6 +60,8 @@
 		0D2E3DB0238826BB00F31727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2E3DBC23884C7000F31727 /* elegirCategoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elegirCategoria.swift; sourceTree = "<group>"; };
 		0D2E3DC22388659E00F31727 /* principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = principal.swift; sourceTree = "<group>"; };
+		0DEDE4F52393F2D900C57A56 /* tipoColeccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoColeccion.swift; sourceTree = "<group>"; };
+		0DEDE4F72393F30400C57A56 /* presentacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = presentacion.swift; sourceTree = "<group>"; };
 		1E7F9A9A1D0FECC4B409FCB2 /* Pods_CatalogadorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatalogadorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CBC48224C44AB9558109FB /* Pods-CatalogadorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogadorTests.release.xcconfig"; path = "Target Support Files/Pods-CatalogadorTests/Pods-CatalogadorTests.release.xcconfig"; sourceTree = "<group>"; };
 		4736486E651D588BFEC98AA3 /* Pods-CatalogadorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatalogadorTests.debug.xcconfig"; path = "Target Support Files/Pods-CatalogadorTests/Pods-CatalogadorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				0D2E3D8D238826B900F31727 /* inicio.swift */,
 				0D2E3DBC23884C7000F31727 /* elegirCategoria.swift */,
 				0D2E3DC22388659E00F31727 /* principal.swift */,
+				0DEDE4F52393F2D900C57A56 /* tipoColeccion.swift */,
+				0DEDE4F72393F30400C57A56 /* presentacion.swift */,
 				0D2E3D8F238826B900F31727 /* Main.storyboard */,
 				0D2E3D95238826BB00F31727 /* Assets.xcassets */,
 				0D2E3D97238826BB00F31727 /* LaunchScreen.storyboard */,
@@ -416,9 +422,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEDE4F82393F30400C57A56 /* presentacion.swift in Sources */,
 				0D2E3D8E238826B900F31727 /* inicio.swift in Sources */,
 				0D2E3D94238826B900F31727 /* Catalogador.xcdatamodeld in Sources */,
 				0D2E3D8A238826B900F31727 /* AppDelegate.swift in Sources */,
+				0DEDE4F62393F2D900C57A56 /* tipoColeccion.swift in Sources */,
 				0D2E3DBD23884C7000F31727 /* elegirCategoria.swift in Sources */,
 				0D2E3DC32388659E00F31727 /* principal.swift in Sources */,
 				0D2E3D8C238826B900F31727 /* SceneDelegate.swift in Sources */,

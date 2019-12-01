@@ -34,12 +34,9 @@ class inicio: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     }
         
     @IBAction func pulsarBoton(_ sender: Any) {
-        self.performSegue(withIdentifier: "elegirCategoria", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! elegirCategoria
-        vc.eleccion = eleccion
+        let vc = storyboard?.instantiateViewController(withIdentifier: "elegirCategoria") as? elegirCategoria
+        vc?.eleccion = eleccion
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     override func viewDidLoad() {

@@ -33,11 +33,13 @@ class elegirCategoria: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     @IBAction func pulsarAceptar(_ sender: Any) {
-        self.performSegue(withIdentifier: "principal", sender: self)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "principal") as? principal
+        vc?.tipo = tipoSeleccionado
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! principal
+    @IBAction func pulsarCancelar(_ sender: Any) {
+        tipo.selectRow(0, inComponent: 0, animated: true)
     }
 
     override func viewDidLoad() {

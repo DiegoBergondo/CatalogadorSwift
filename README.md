@@ -1,4 +1,4 @@
 # CatalogadorSwift
-Versión en Swift del CatalogadorSQL de Java. 
+Versión en Swift para iPad del CatalogadorSQL de Java. 
 
 En primeras etapas de desarrollo.

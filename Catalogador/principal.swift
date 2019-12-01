@@ -68,6 +68,20 @@ class principal: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return button
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0:
+            switch indexPath.row {
+            case 0:
+                vistaActiva = vistaTipoColeccion
+            default:
+                vistaActiva = vistaPresentacion
+            }
+        default:
+            vistaActiva = vistaPresentacion
+        }
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return listaSecciones.count
     }

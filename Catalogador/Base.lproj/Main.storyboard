@@ -333,8 +333,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="594" height="942"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4x-bC-a4B">
-                                <rect key="frame" x="40" y="115.5" width="514" height="418"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inicio" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M4x-bC-a4B">
+                                <rect key="frame" x="40" y="114" width="514" height="300"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-MV-Gog">
                                 <rect key="frame" x="40" y="20" width="514" height="44"/>
@@ -352,6 +352,7 @@
                             <constraint firstItem="M4x-bC-a4B" firstAttribute="top" secondItem="1hG-MV-Gog" secondAttribute="bottom" constant="50" id="gx1-0s-fbK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M4x-bC-a4B" secondAttribute="trailing" constant="20" id="qev-VE-CIT"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="iEZ-gE-ZV6"/>
                     </view>
                     <connections>
                         <outlet property="imagen" destination="M4x-bC-a4B" id="WGt-Ni-vMy"/>
@@ -369,13 +370,35 @@
                     <view key="view" contentMode="scaleToFill" id="LWl-eP-722">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chooseone" translatesAutoresizingMaskIntoConstraints="NO" id="MDT-6r-ONR">
+                                <rect key="frame" x="20" y="100" width="794" height="186"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2MQ-vf-J5C">
+                                <rect key="frame" x="317" y="386" width="200" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="3wD-a9-6M8"/>
+                                    <constraint firstAttribute="width" constant="200" id="CQO-QJ-vb7"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2MQ-vf-J5C" firstAttribute="top" secondItem="MDT-6r-ONR" secondAttribute="bottom" constant="100" id="F3d-D6-DI1"/>
+                            <constraint firstItem="Q1x-3w-zLw" firstAttribute="trailing" secondItem="MDT-6r-ONR" secondAttribute="trailing" constant="20" id="Gk5-2H-b2y"/>
+                            <constraint firstItem="MDT-6r-ONR" firstAttribute="leading" secondItem="Q1x-3w-zLw" secondAttribute="leading" constant="20" id="HuP-p5-DO1"/>
+                            <constraint firstItem="2MQ-vf-J5C" firstAttribute="centerX" secondItem="LWl-eP-722" secondAttribute="centerX" id="M0n-pG-x0E"/>
+                            <constraint firstItem="MDT-6r-ONR" firstAttribute="top" secondItem="Q1x-3w-zLw" secondAttribute="top" constant="100" id="gW2-8W-XOS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q1x-3w-zLw"/>
                     </view>
+                    <connections>
+                        <outlet property="tipo" destination="2MQ-vf-J5C" id="qjM-6G-fDd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfo-j2-xLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2296" y="714"/>
+            <point key="canvasLocation" x="2294.9640287769785" y="713.84892086330933"/>
         </scene>
     </scenes>
     <resources>

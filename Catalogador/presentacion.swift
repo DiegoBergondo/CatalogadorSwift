@@ -36,8 +36,4 @@ class presentacion: UIViewController{
         }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
 }

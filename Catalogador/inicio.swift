@@ -35,7 +35,7 @@ class inicio: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
         
     @IBAction func pulsarBoton(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "elegirCategoria") as? elegirCategoria
-        vc?.eleccion = eleccion
+        vc?.setEleccion(eleccion: eleccion)
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

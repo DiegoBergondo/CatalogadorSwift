@@ -25,6 +25,9 @@ class principal: UIViewController, UITableViewDelegate, UITableViewDataSource{
         secciones(estaExpandida: true, secciones: ["Comparador"])]
     var tipo: Int = 0
     
+    func setTipo(tipo: Int){
+        self.tipo = tipo
+    }
     
     func inicializarVistas() {
         vistaPresentacion = storyboard?.instantiateViewController(withIdentifier: "presentacion") as! presentacion
@@ -129,7 +132,7 @@ class principal: UIViewController, UITableViewDelegate, UITableViewDataSource{
             aV.didMove(toParent: self)
         }
     }
-    
+        
     @IBAction func pulsarAceptar(_ sender: Any) {
     }
     

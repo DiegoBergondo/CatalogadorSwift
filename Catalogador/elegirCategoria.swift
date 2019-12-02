@@ -16,6 +16,10 @@ class elegirCategoria: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     var listaTipo: [String] = ["Cuadros", "Libros", "Música", "Videojuegos"]
     var tipoSeleccionado: Int = 0
     
+    func setEleccion(eleccion: Int){
+        self.eleccion = eleccion
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -34,7 +38,7 @@ class elegirCategoria: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     @IBAction func pulsarAceptar(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "principal") as? principal
-        vc?.tipo = tipoSeleccionado
+        vc?.setTipo(tipo: tipoSeleccionado)
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     

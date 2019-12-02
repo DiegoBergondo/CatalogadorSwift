@@ -12,11 +12,14 @@ class presentacion: UIViewController{
     
     @IBOutlet weak var titulo: UITextField!
     @IBOutlet weak var imagen: UIImageView!
-    var tipo: Int = 0
+    var tipo: Int = 0{
+        didSet {
+            reload()
+        }
+    }
     
     func setTipo(tipo: Int){
         self.tipo = tipo
-        reload()
     }
     
     func reload(){
